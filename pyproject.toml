@@ -1,0 +1,20 @@
+[project]
+name = "byte-bistro-rag"
+version = "0.1.0"
+description = "A local RAG chat over the Byte Bistro handbook, powered by Ollama."
+readme = "README.md"
+authors = [
+    { name = "Fatjon Mileti", email = "fatjon.mileti@fullscreendigital.ro" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+byte-bistro-rag = "byte_bistro_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
